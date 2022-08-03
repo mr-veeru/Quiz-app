@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Login Page </title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 300px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+        .box {
+            margin: 8px;
+        }
+        .box p{
+            color: white;
+        }
+        .box div{
+            position: relative;
+            width: 100%;
+            height: 40px;
+        }
+        .box div:before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 102%;
+            height: 105%;
+            border-radius: 10px;
+            background: red;
+        }
+        .box input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: black;
+            color: white;
+            border: none;
+            padding-left: 0.8em;
+            border-radius: 10px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background: black;
+        }
+        .text{
+            text-align: center;
+            color: burlywood;
+            margin: 0.5em 0;
+        }
+        a{
+            color: aqua;
+        }
+        .log_btn{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            margin: 0.5em 0;
+            cursor: pointer;
+            color: white;
+            background: red;
+        }
+        .log_btn:hover{
+            transform: translate(-1%, 5%);
+            background-color: blueviolet
+        }
+        .new{
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            margin: 0.5em 0;
+            cursor: pointer;
+            color: white;
+            background: green;
+        }
+        .new:hover{
+            transform: translate(-1%, 5%);
+            background-color: blueviolet
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Log In </h1>
+        <br>
+        <form action="quiz.html">
+            <div class="box">
+                <p> Email </p>
+                <div>
+                    <input type="email" placeholder="Enter Your Email address" required>
+                </div>
+            </div>
+            
+            <div class="box">
+                <p> Password </p>
+                <div>
+                    <input type="password" placeholder="Enter Your Password" required>
+                </div>
+            </div>
+
+            <button class="log_btn"> 
+                <h2> Log In </h2> 
+            </button>
+        </form>
+        <p class="text"> 
+            <a href="#" >Forgotten Password??? </a>
+        </p>
+        <hr>
+        <p class="text"> Don't have an account??? </p>
+        <a href="reg.html">
+            <button class="new"> 
+                <h3> Create New Account </h3> 
+            </button>
+        </a>
+    </div>
+    
+</body>
+</html>
